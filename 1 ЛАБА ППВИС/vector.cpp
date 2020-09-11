@@ -16,39 +16,39 @@ double class_vector::vector_lenght()
 
 class_vector class_vector::operator+(class_vector a)
 {
-	class_vector b;
-	b.x = x + a.x;
-	b.y = y + a.y;
-	b.z = z + a.z;
-	return b;
+	class_vector addition_result;
+	addition_result.x = x + a.x;
+	addition_result.y = y + a.y;
+	addition_result.z = z + a.z;
+	return addition_result;
 }
 
 class_vector class_vector::operator-(class_vector a)
 {
-	class_vector b;
-	b.x = x - a.x;
-	b.y = y - a.y;
-	b.z = z - a.z;
-	return b;
+	class_vector subtraction_result;
+	subtraction_result.x = x - a.x;
+	subtraction_result.y = y - a.y;
+	subtraction_result.z = z - a.z;
+	return subtraction_result;
 }
 
 
 class_vector class_vector::operator*(class_vector a)
 {
-		class_vector b;
-		b.x = (y * a.z) - (z * a.y);
-		b.y = (z * a.x) - (x * a.z);
-		b.z = (x * a.y) - (y * a.x);
-		return b;
+		class_vector multiplication_result;
+		multiplication_result.x = (y * a.z) - (z * a.y);
+		multiplication_result.y = (z * a.x) - (x * a.z);
+		multiplication_result.z = (x * a.y) - (y * a.x);
+		return multiplication_result;
 }
 
 class_vector class_vector::operator*(double a)
 {
-	class_vector b;
-	b.x = x * a;
-	b.y = y * a;
-	b.z = z * a;
-	return b;
+	class_vector multiplication_result;
+	multiplication_result.x = x * a;
+	multiplication_result.y = y * a;
+	multiplication_result.z = z * a;
+	return multiplication_result;
 }
 
 void class_vector::operator*=(double a)
@@ -60,14 +60,11 @@ void class_vector::operator*=(double a)
 
 class_vector class_vector::operator/(class_vector a)
 {
-	a.x = 1 / a.x;
-	a.y = 1 / a.y;
-	a.z = 1 / a.z;
-	class_vector b;
-	b.x = (y * a.z) - (z * a.y);
-	b.y = (z * a.x) - (x * a.z);
-	b.z = (x * a.y) - (y * a.x);
-	return b;
+	class_vector division_result;
+	division_result.x = (y * (1 / a.z)) - (z * (1 / a.y));
+	division_result.y = (z * (1 / a.x)) - (x * (1 / a.z));
+	division_result.z = (x * (1 / a.y)) - (y * (1 / a.x));
+	return division_result;
 }
 
 void class_vector::operator+=(class_vector a)
@@ -86,27 +83,24 @@ void class_vector::operator-=(class_vector a)
 
 void class_vector::operator*=(class_vector a)
 {
-	class_vector b;
-	b.x = (y * a.z) - (z * a.y);
-	b.y = (z * a.x) - (x * a.z);
-	b.z = (x * a.y) - (y * a.x);
-	x = b.x;
-	y = b.y;	
-	z = b.z;
+	class_vector multiplication_result;
+	multiplication_result.x = (y * a.z) - (z * a.y);
+	multiplication_result.y = (z * a.x) - (x * a.z);
+	multiplication_result.z = (x * a.y) - (y * a.x);
+	x = multiplication_result.x;
+	y = multiplication_result.y;
+	z = multiplication_result.z;
 }
 
 void class_vector::operator/=(class_vector a)
 {
-	a.x = 1 / a.x;
-	a.y = 1 / a.y;
-	a.z = 1 / a.z;
-	class_vector b;
-	b.x = (y * a.z) - (z * a.y);
-	b.y = (z * a.x) - (x * a.z);
-	b.z = (x * a.y) - (y * a.x);
-	x = b.x;
-	y = b.y;
-	z = b.z;
+	class_vector division_result;
+	division_result.x = (y * (1 / a.z)) - (z * (1 / a.y));
+	division_result.y = (z * (1 / a.x)) - (x * (1 / a.z));
+	division_result.z = (x * (1 / a.y)) - (y * (1 / a.x));
+	x = division_result.x;
+	y = division_result.y;
+	z = division_result.z;
 }
 
 double class_vector::operator^(class_vector a)
