@@ -22,7 +22,7 @@ public:
 	friend ostream& operator<<(ostream& out, class_vector& a);
 
 	void operator+=(class_vector a);
-
+	
 	void operator-=(class_vector a);
 
 	void operator*=(class_vector a);

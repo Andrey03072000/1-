@@ -29,5 +29,8 @@
     <ClInclude Include="vector.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

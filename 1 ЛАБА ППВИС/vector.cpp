@@ -1,7 +1,5 @@
 #include "vector.h"
 
-
-
 void class_vector::operator=(class_vector a)
 {
 	x = a.x;

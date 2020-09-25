@@ -1,8 +1,10 @@
 ﻿
-#include "vector.h"
+#include "Header.h"
 
 int main()
 {
-	cout << " ";
+	Console a;
+	cin >> a;
+	cout << a;
 }
 
