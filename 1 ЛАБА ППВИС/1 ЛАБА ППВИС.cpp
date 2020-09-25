@@ -1,10 +1,13 @@
 ﻿
-#include "Header.h"
+#include "vector.h"
 
 int main()
 {
-	Console a;
-	cin >> a;
-	cout << a;
+	int x, y, z;
+	cout << "vvedite x y z" << endl;
+	class_vector test;
+	cin >> test;
+	cout << test;
+	return 0;
 }
 

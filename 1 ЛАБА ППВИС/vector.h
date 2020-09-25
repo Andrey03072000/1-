@@ -17,9 +17,7 @@ public:
 
 	void operator=(class_vector a);
 
-	friend istream& operator>>(istream& in,class_vector& a);
-
-	friend ostream& operator<<(ostream& out, class_vector& a);
+	
 
 	void operator+=(class_vector a);
 	
@@ -57,6 +55,10 @@ public:
 
 	class_vector operator/ (class_vector a);
 
+	friend istream& operator>>(istream& in, class_vector& a);
+
+	friend ostream& operator<<(ostream& out, class_vector& a);
+	
 private:
 	
 	double x, y, z;

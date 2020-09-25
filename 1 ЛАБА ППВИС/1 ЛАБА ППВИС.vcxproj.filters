@@ -29,7 +29,7 @@
     <ClInclude Include="vector.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
+    <ClInclude Include="test.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
