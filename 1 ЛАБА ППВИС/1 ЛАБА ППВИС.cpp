@@ -1,13 +1,10 @@
 ﻿
 #include "vector.h"
-
+#include "test.h"
 int main()
 {
-	int x, y, z;
-	cout << "vvedite x y z" << endl;
-	class_vector test;
-	cin >> test;
-	cout << test;
+	class_test test;
+	test.test_all_operator();
 	return 0;
 }
 

@@ -17,8 +17,6 @@ public:
 
 	void operator=(class_vector a);
 
-	
-
 	void operator+=(class_vector a);
 	
 	void operator-=(class_vector a);
@@ -64,5 +62,4 @@ private:
 	double x, y, z;
 
 };
-
 #endif 

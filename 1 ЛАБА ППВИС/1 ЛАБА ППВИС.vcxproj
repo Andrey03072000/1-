@@ -140,8 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1 ЛАБА ППВИС.cpp" />
+    <ClCompile Include="test.cpp" />
     <ClCompile Include="vector.cpp" />
-    <ClCompile Include="vector_implementation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h" />
